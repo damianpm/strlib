@@ -4,8 +4,9 @@
   "description": "A string reversal library",
   "main": "index.js",
   "scripts": {
-    "test": "BABEL_ENV=test ava",
-    "build": "BABEL_ENV=build rollup -c"
+    "test": "BABEL_ENV=test nyc ava",
+    "build": "BABEL_ENV=build rollup -c",
+    "coverage": "nyc report --reporter=lcov --reporter=text-lcov --reporter=html"
   },
   "ava": {
     "files": [
@@ -28,7 +29,9 @@
     "babel-core": "6.24.1",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-env": "1.4.0",
+    "nyc": "^14.1.1",
     "rollup-plugin-babel": "2.7.1",
-    "rollup-watch": "3.2.2"
+    "rollup-watch": "3.2.2",
+    "tap-xunit": "^2.4.1"
   }
 }
