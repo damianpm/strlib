@@ -1,7 +1,7 @@
 {
-  "name": "strlib",
+  "name": "strlib-test-yarn",
   "version": "1.0.0",
-  "description": "A string reversal library",
+  "description": "A string reversal library. Just testing yarn, don't use me",
   "main": "index.js",
   "scripts": {
     "test": "BABEL_ENV=test nyc ava",
@@ -20,7 +20,7 @@
     "require": "babel-register",
     "babel": "inherit"
   },
-  "author": "Briciolino",
+  "author": "Damian Peralta",
   "license": "MIT",
   "private": false,
   "devDependencies": {
